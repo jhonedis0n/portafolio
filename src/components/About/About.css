@@ -1,0 +1,152 @@
+.section {
+  padding: var(--spacing-xxl) 0;
+}
+
+.section__container {
+  width: min(
+    calc(100% - 48px),
+    var(--container-width)
+  );
+
+  margin: 0 auto;
+}
+
+.section__header {
+  display: flex;
+  align-items: baseline;
+
+  gap: 14px;
+
+  margin-bottom: 48px;
+}
+
+.section__number {
+  color: var(--color-accent);
+
+  font-family: var(--font-mono);
+
+  font-size: 14px;
+}
+
+.section__title {
+  margin: 0;
+
+  color: var(--color-text-primary);
+
+  font-size: clamp(28px, 4vw, 40px);
+
+  line-height: 1.2;
+
+  letter-spacing: -0.03em;
+}
+
+.about {
+  border-top: 1px solid var(--color-border);
+}
+
+.about__grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.4fr)
+    minmax(280px, 0.6fr);
+
+  gap: 80px;
+
+  align-items: start;
+}
+
+.about__content {
+  max-width: 760px;
+}
+
+.about__text {
+  margin: 0 0 24px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 17px;
+
+  line-height: 1.9;
+}
+
+.about__text:last-child {
+  margin-bottom: 0;
+}
+
+.about__summary {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.about__item {
+  min-height: 110px;
+
+  padding: 20px 16px;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.about__item:nth-child(odd) {
+  border-right: 1px solid var(--color-border);
+}
+
+.about__label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-mono);
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+
+.about__item strong {
+  color: var(--color-text-primary);
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  .section__container {
+    width: min(
+      calc(100% - 32px),
+      var(--container-width)
+    );
+  }
+
+  .section__header {
+    margin-bottom: 32px;
+  }
+
+  .about__summary {
+    grid-template-columns: 1fr;
+  }
+
+  .about__item:nth-child(odd) {
+    border-right: none;
+  }
+}

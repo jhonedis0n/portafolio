@@ -1,0 +1,295 @@
+.hero {
+  min-height: calc(100vh - 72px);
+
+  display: flex;
+  align-items: center;
+
+  padding: 80px 0;
+}
+
+.hero__container {
+  width: min(
+    calc(100% - 48px),
+    var(--container-width)
+  );
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.2fr)
+    minmax(360px, 0.8fr);
+
+  align-items: center;
+
+  gap: 80px;
+}
+
+.hero__content {
+  max-width: 720px;
+}
+
+.hero__eyebrow {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin: 0 0 20px;
+
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-mono);
+
+  font-size: 13px;
+}
+
+.hero__status {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: var(--color-success);
+
+  box-shadow:
+    0 0 0 4px rgba(63, 185, 80, 0.1);
+}
+
+.hero__role {
+  margin: 0 0 12px;
+
+  color: var(--color-accent);
+
+  font-family: var(--font-mono);
+
+  font-size: 14px;
+  font-weight: 500;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+
+.hero__title {
+  margin: 0;
+
+  color: var(--color-text-primary);
+
+  font-size: clamp(42px, 6vw, 72px);
+
+  line-height: 1.05;
+
+  letter-spacing: -0.04em;
+}
+
+.hero__headline {
+  max-width: 700px;
+
+  margin: 24px 0 20px;
+
+  color: var(--color-text-primary);
+
+  font-size: clamp(24px, 3vw, 38px);
+
+  line-height: 1.2;
+
+  letter-spacing: -0.025em;
+}
+
+.hero__description {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: var(--color-text-secondary);
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+.hero__actions {
+  display: flex;
+
+  gap: 14px;
+
+  margin-top: 32px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 46px;
+
+  padding: 0 20px;
+
+  border-radius: var(--radius-sm);
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button--primary {
+  background: var(--color-accent);
+
+  color: var(--color-background);
+}
+
+.button--primary:hover {
+  background: var(--color-accent-hover);
+}
+
+.button--secondary {
+  border: 1px solid var(--color-border);
+
+  color: var(--color-text-primary);
+}
+
+.button--secondary:hover {
+  border-color: var(--color-accent);
+
+  color: var(--color-accent);
+}
+
+.hero__technologies {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 32px;
+}
+
+.hero__technologies span {
+  padding: 6px 10px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+}
+
+.hero__visual {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__card {
+  width: 100%;
+  max-width: 440px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(45, 212, 191, 0.08),
+      transparent 45%
+    ),
+    var(--color-background-secondary);
+
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.3);
+}
+
+.hero__card-header {
+  display: flex;
+
+  gap: 7px;
+
+  padding: 14px 16px;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hero__card-header span {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: var(--color-border);
+}
+
+.hero__code {
+  padding: 32px 28px;
+
+  font-family: var(--font-mono);
+
+  font-size: 13px;
+
+  line-height: 2;
+}
+
+.hero__code p {
+  margin: 0;
+}
+
+.code-keyword {
+  color: #ff7b72;
+}
+
+.code-string {
+  color: var(--color-accent);
+}
+
+@media (max-width: 900px) {
+  .hero__container {
+    grid-template-columns: 1fr;
+
+    gap: 48px;
+  }
+
+  .hero__visual {
+    justify-content: flex-start;
+  }
+
+  .hero__card {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero__container {
+    width: min(
+      calc(100% - 32px),
+      var(--container-width)
+    );
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hero__technologies {
+    margin-top: 24px;
+  }
+}
