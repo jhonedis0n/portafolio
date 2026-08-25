@@ -1,0 +1,167 @@
+.odoo {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.odoo__content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(320px, 0.9fr);
+
+  gap: 64px;
+
+  padding: 48px 0;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.odoo__intro {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.odoo__eyebrow {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: var(--color-accent);
+
+  font-family: var(--font-mono);
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+
+.odoo__title {
+  max-width: 620px;
+
+  margin: 0;
+
+  color: var(--color-text-primary);
+
+  font-size: clamp(32px, 4vw, 52px);
+
+  line-height: 1.1;
+
+  letter-spacing: -0.04em;
+}
+
+.odoo__description {
+  max-width: 600px;
+
+  margin: 24px 0 0;
+
+  color: var(--color-text-secondary);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+/* STACK */
+
+.odoo__stack {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 32px;
+}
+
+.odoo__stack span {
+  padding: 7px 10px;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--radius-small);
+
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-mono);
+
+  font-size: 11px;
+}
+
+/* AREAS */
+
+.odoo__areas {
+  border-top: 1px solid var(--color-border);
+}
+
+.odoo__area {
+  display: grid;
+
+  grid-template-columns: 40px 1fr;
+
+  gap: 20px;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.odoo__area-number {
+  color: var(--color-accent);
+
+  font-family: var(--font-mono);
+
+  font-size: 11px;
+}
+
+.odoo__area-content h4 {
+  margin: 0 0 6px;
+
+  color: var(--color-text-primary);
+
+  font-size: 15px;
+
+  font-weight: 500;
+}
+
+.odoo__area-content p {
+  margin: 0;
+
+  color: var(--color-text-secondary);
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .odoo__content {
+    grid-template-columns: 1fr;
+
+    gap: 48px;
+
+    padding: 36px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .odoo__content {
+    gap: 36px;
+  }
+
+  .odoo__title {
+    font-size: 32px;
+  }
+
+  .odoo__area {
+    grid-template-columns: 32px 1fr;
+
+    gap: 14px;
+  }
+}

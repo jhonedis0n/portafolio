@@ -8,24 +8,24 @@ export const siteConfig = {
   },
 
   profile: {
-    role: "Backend Developer",
-    specialization: "Especialista en Odoo",
+    role: "INGENIERO DE SISTEMAS · SOFTWARE DEVELOPER · BACKEND & AUTOMATIZACIÓN",
+    specialization: "Backend Developer · Odoo",
 
     headline:
       "Construyo soluciones backend para problemas reales de negocio.",
 
     description:
-      "Ingeniero de Sistemas con más de 5 años de experiencia en desarrollo web, backend y automatización de procesos empresariales.",
+      "Ingeniero de Sistemas con más de 5 años de experiencia en desarrollo backend, automatización de procesos empresariales e implementación de soluciones ERP.",
 
     about:
-      "Ingeniero de Sistemas con experiencia en desarrollo backend, integración de APIs, bases de datos y automatización de procesos empresariales. He participado en el desarrollo, implementación y mantenimiento de soluciones orientadas a mejorar procesos internos y responder a necesidades específicas de las organizaciones.",
+      "Soy Ingeniero de Sistemas y Backend Developer con más de 5 años de experiencia en desarrollo web, automatización de procesos e implementación de soluciones empresariales.",
 
     approach:
-      "Me enfoco en entender el problema antes de implementar la solución, buscando desarrollar sistemas mantenibles, integrables y alineados con las necesidades reales del negocio.",
+      "Desarrollo soluciones de software para automatizar procesos, integrar sistemas y resolver necesidades reales de negocio utilizando Python, PHP, JavaScript, Google Apps Script, AppSheet, Odoo y bases de datos relacionales.",
   },
 
   social: {
-    github: "",
+    github: "https://github.com/jhonedis0n",
     linkedin:
       "https://linkedin.com/in/jhon-edison-pinilla-paez",
   },

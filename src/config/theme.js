@@ -37,4 +37,9 @@ export const theme = {
   layout: {
     maxWidth: "1200px",
   },
+
+  transitions: {
+    fast: "0.2s ease",
+    normal: "0.25s ease",
+  },
 };

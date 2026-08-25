@@ -1,31 +1,47 @@
 export const navigation = [
   {
+    id: "home",
+    label: "Inicio",
+    href: "#home",
+  },
+  {
+    id: "about",
     label: "Sobre mí",
     href: "#about",
-    enabled: true,
   },
-
   {
+    id: "specialties",
+    label: "Especialidades",
+    href: "#specialties",
+  },
+  {
+    id: "experience",
     label: "Experiencia",
     href: "#experience",
-    enabled: true,
   },
-
   {
-    label: "Tecnologías",
-    href: "#skills",
-    enabled: true,
-  },
-
-  {
+    id: "projects",
     label: "Proyectos",
     href: "#projects",
-    enabled: true,
   },
-
   {
+    id: "technologies",
+    label: "Tecnologías",
+    href: "#technologies",
+  },
+  {
+    id: "odoo",
+    label: "Odoo",
+    href: "#odoo",
+  },
+  {
+    id: "education",
+    label: "Formación",
+    href: "#education",
+  },
+  {
+    id: "contact",
     label: "Contacto",
     href: "#contact",
-    enabled: true,
   },
 ];

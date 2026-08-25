@@ -1,16 +1,104 @@
-# React + Vite
+# Portafolio Personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto desarrollado con React + Vite para mostrar información personal, experiencia, educación, habilidades y proyectos.
 
-Currently, two official plugins are available:
+## Tecnologías
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- Vite
+- CSS personalizado
+- JavaScript
 
-## React Compiler
+## Estructura del proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+portafolio/
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── index.css
+│   ├── main.jsx
+│   ├── assets/
+│   ├── components/
+│   │   ├── About/
+│   │   │   ├── About.css
+│   │   │   └── About.jsx
+│   │   ├── BackToTop/
+│   │   │   ├── BackToTop.css
+│   │   │   └── BackToTop.jsx
+│   │   ├── Contact/
+│   │   │   ├── Contact.css
+│   │   │   └── Contact.jsx
+│   │   ├── Education/
+│   │   │   ├── Education.css
+│   │   │   └── Education.jsx
+│   │   ├── Experience/
+│   │   │   ├── Experience.css
+│   │   │   └── Experience.jsx
+│   │   ├── Footer/
+│   │   │   ├── Footer.css
+│   │   │   └── Footer.jsx
+│   │   ├── Hero/
+│   │   │   ├── Hero.css
+│   │   │   └── Hero.jsx
+│   │   ├── Navbar/
+│   │   │   ├── Navbar.css
+│   │   │   └── Navbar.jsx
+│   │   ├── Odoo/
+│   │   │   ├── Odoo.css
+│   │   │   └── Odoo.jsx
+│   │   ├── Projects/
+│   │   │   ├── Projects.css
+│   │   │   └── Projects.jsx
+│   │   ├── Skills/
+│   │   │   ├── Skills.css
+│   │   │   └── Skills.jsx
+│   │   ├── Specialties/
+│   │   │   ├── Specialties.css
+│   │   │   └── Specialties.jsx
+│   │   └── ...
+│   ├── config/
+│   │   ├── navigation.js
+│   │   ├── sections.js
+│   │   ├── site.js
+│   │   └── theme.js
+│   ├── data/
+│   │   ├── education.js
+│   │   ├── experience.js
+│   │   ├── projects.js
+│   │   ├── skills.js
+│   │   └── specialties.js
+│   ├── hooks/
+│   │   └── useActiveSection.js
+│   └── styles/
+│       └── sections.css
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── vite.config.js
+├── README.md
+└── package-lock.json
+```
 
-## Expanding the ESLint configuration
+## Descripción de carpetas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/components/`: contiene los bloques principales de la página como Hero, About, Projects, Contact, etc.
+- `src/data/`: almacena los datos de educación, experiencia, habilidades y proyectos.
+- `src/config/`: centraliza configuraciones de navegación, tema y secciones.
+- `src/hooks/`: incluye hooks personalizados, como la lógica para la sección activa.
+- `src/styles/`: estilos globales compartidos.
+- `public/`: archivos estáticos.
+
+## Ejecución local
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
